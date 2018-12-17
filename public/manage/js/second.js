@@ -100,7 +100,7 @@ $(function() {
 
       // 重置校验状态
       $('#form').data("bootstrapValidator").updateStatus("brandLogo", "VALID")
-    }
+    } 
   });
 
 
