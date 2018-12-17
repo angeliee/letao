@@ -167,10 +167,5 @@ a:active {
 .lt_main .echarts_2 {
    width: 48%;
    height: 400px;
-   background-color: #3C8DBC;
-}
-
-/* 模态框 */
-.modal .modal-header {
-  line-height: ;
+   /* background-color: #3C8DBC; */
 }
