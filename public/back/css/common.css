@@ -22,6 +22,10 @@ a:active {
    margin-top: 150px;
 }
 
+.mt_20 {
+  margin-top: 20px;
+}
+
 .red {
   color: #A94442;
 }

@@ -22,7 +22,7 @@ $(function () {
             pageSize: pageSize
          },
          success: function (res) {
-            console.log(res)
+            // console.log(res)
             var htmlstr = template('tmp', res)
             $('tbody').html(htmlstr)
 
@@ -73,7 +73,7 @@ $(function () {
                isDelete: isDelete
             },
             success: function (res) {
-               console.log(res)
+               // console.log(res)
                if (res.success) {
                   // 成功发送
                   // 1.关闭模态框
