@@ -82,7 +82,7 @@ $(function () {
             // 重置表单内容
             // resetForm(true)  表示内容和状态都重置
             // resetForm()      只重置状态
-            $('form').data('bootstrapValidator').resetForm(true)
+            $('#form').data('bootstrapValidator').resetForm(true)
          }
       })
    })
