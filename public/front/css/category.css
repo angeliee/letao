@@ -2,6 +2,7 @@
    float: left;
    width: 90px;
    height: 100%;
+   position: relative;
 }
 
 .lt_nav li {
@@ -28,6 +29,8 @@
 /* 内容 */
 .lt_content {
    overflow: hidden;
+   height: 100%;
+   position: relative;
 }
 
 .lt_content li {
