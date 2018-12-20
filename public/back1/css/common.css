@@ -1,0 +1,156 @@
+.body_bg {
+   background-color: #222D32;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+   text-decoration: none;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   list-style: none;
+}
+
+.mt_150 {
+   margin-top: 150px;
+}
+
+.mt_30 {
+   margin-top: 30px;
+}
+
+.panel-title {
+   height: 40px;
+   line-height: 40px;
+   font-size: 20px;
+   text-align: center;
+}
+
+/* 左侧导航 */
+.lt_aside {
+   width: 180px;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #222D32;
+   z-index: 999;
+   transition: 1s;
+}
+
+.lt_aside.hidemenu {
+   left: -180px;
+}
+
+.lt_aside .title {
+   width: 100%;
+   height: 50px;
+   background-color: #367FA9;
+   color: #fff;
+   font-size: 24px;
+   text-align: center;
+   line-height: 50px;
+}
+
+.lt_aside .user {
+   width: 100%;
+   height: 180px;
+   padding-top: 30px;
+}
+
+.lt_aside .user img {
+   display: block;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   margin: 0 auto;
+}
+
+.lt_aside .user p {
+   height: 40px;
+   color: #fff;
+   text-align: center;
+   line-height: 40px;
+   font-size: 18px;
+}
+
+.lt_aside .nav a {
+   display: block;
+   height: 40px;
+   width: 100%;
+   color: #fff;
+   line-height: 40px;
+   padding-left: 40px;
+   border-left: 3px solid transparent;
+}
+
+.lt_aside .nav a.current {
+   border-left: 3px solid #006699;
+   background-color: #1D1F21;
+}
+
+.lt_aside .nav a i {
+   margin-right: 3px;
+}
+
+/* 二级分类 */
+.lt_aside .nav .child {
+   display: none;
+}
+
+.lt_aside .nav .child a {
+   padding-left: 60px;
+}
+
+
+/* 右侧内容 */
+.lt_major {
+   padding-left: 180px;
+   padding-top: 50px;
+   transition: 1s;
+}
+
+.lt_major.hidemenu {
+   padding-left: 0;
+}
+
+/* 头部 */
+.lt_topbar {
+   position: fixed;
+   width: 100%;
+   height: 50px;
+   top: 0;
+   left: 0;
+   padding-left: 180px;
+   background-color: #3C8DBC;
+   transition: 1s;
+}
+
+.lt_topbar.hidemenu {
+   padding-left: 0;
+}
+
+.lt_topbar a {
+   display: block;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   color: #fff;
+   font-size: 16px;
+}
+
+.lt_content {
+   
+}
+
+.lt_content .breadcrumb {
+   margin-top: 20px;
+}
