@@ -15,3 +15,36 @@ mui('.mui-scroll-wrapper').scroll({
    // 去除滚动条
    indicators: false
 });
+
+
+// 解析地址栏参数:
+// 传递参数的键名,返回对应参数值
+function getSearch(k) {
+   // 拿到的是地址栏编码过的字符串
+   var str = location.search
+
+   // 解码成中文
+   str = decodeURI(str)
+
+   // 去掉 ?
+   // str.splice(start,end)
+   // 包括start 不包括end, 不写end,表示从start截取到最后
+   str = str.slice(1)
+
+   // split: 将字符串分割成数组
+   var arr = str.split('&')
+
+   // 用来存储传过来的键值对
+   var obj = {}
+
+   // 遍历数组,获取键值,对应存储
+   arr.forEach(function (v, i) {
+      var key = v.split('=')[0]
+      var value = v.split('=')[1]
+      obj[ key ] = value
+   })
+
+   // 将对象返回出去
+   return obj[k]
+
+}
