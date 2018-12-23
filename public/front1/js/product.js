@@ -42,7 +42,13 @@ $(function () {
       // 获取尺码和库存
       var size = $('.lt_size span.current').text()
       var num = $('.mui-numbox input').text()
-      console.log(size, num, id)
+      // console.log(size, num, id)
+
+      if (!size) {
+         mui.toast("请选择尺码");
+         return;
+      }
+
 
       $.ajax({
          type: 'post',
